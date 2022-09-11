@@ -1,0 +1,31 @@
+.statistics {
+  width: 400px;
+  margin-top: 40px;
+}
+.title {
+  text-transform: uppercase;
+}
+.statList {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  list-style: none;
+  font-family: 'Roboto';
+  font-size: 20px;
+  line-height: 1.18;
+}
+.statList_item {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #212121;
+}
+.label {
+  margin-bottom: 5px;
+}
+.percentage {
+  font-size: 30px;
+}
