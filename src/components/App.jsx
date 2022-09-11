@@ -1,12 +1,14 @@
 import React from 'react';
+import css from './App.module.css';
 import user from '../Data/user.json';
 import Profile from './Profile/Profile';
 import DataStat from '../Data/statistics.json';
 import Statistics from './Statistics/Statistics';
 import Friends from '../Data/friends.json';
 import FriendList from './FriendList/FriendList';
-import css from './App.module.css';
-console.log(FriendList);
+import transactions from '../Data/transactions.json';
+console.log(transactions);
+
 export const App = () => {
   return (
     <div

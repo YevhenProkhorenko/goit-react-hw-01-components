@@ -11,7 +11,7 @@
 .friendList_item:not(:last-child) {
   margin-bottom: 15px;
 }
-.status {
+.status_online {
   display: block;
   margin-top: auto;
   margin-bottom: auto;
@@ -21,7 +21,7 @@
   border-radius: 50%;
   background-color: green;
 }
-.offline {
+.status_offline {
   display: block;
   margin-top: auto;
   margin-bottom: auto;
