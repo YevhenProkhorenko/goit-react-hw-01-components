@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import css from '../TransactionHistory/TransactionHistory.module.css';
 const TransactionHistory = ({ transactions }) => (
   <table class={css.tableContainer}>
