@@ -7,7 +7,7 @@ import Statistics from './Statistics/Statistics';
 import Friends from '../Data/friends.json';
 import FriendList from './FriendList/FriendList';
 import transactions from '../Data/transactions.json';
-console.log(transactions);
+import TransactionHistory from './TransactionHistory/TransactionHistory';
 
 export const App = () => {
   return (
@@ -31,6 +31,7 @@ export const App = () => {
       />
       <Statistics title={DataStat.title} stats={DataStat} />
       <FriendList friends={Friends} />
+      <TransactionHistory transactions={transactions} />
     </div>
   );
 };

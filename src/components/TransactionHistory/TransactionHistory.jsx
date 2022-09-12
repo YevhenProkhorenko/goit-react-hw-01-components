@@ -1,7 +1,9 @@
-const Transactions = ({ transactions }) => (
-  <table class="transaction-history">
+import PropTypes from 'prop-types';
+import css from '../TransactionHistory/TransactionHistory.module.css';
+const TransactionHistory = ({ transactions }) => (
+  <table class={css.tableContainer}>
     <thead>
-      <tr>
+      <tr className={css.tableHeader}>
         <th>Type</th>
         <th>Amount</th>
         <th>Currency</th>
@@ -10,8 +12,8 @@ const Transactions = ({ transactions }) => (
 
     <tbody>
       {transactions.map(transaction => (
-        <tr key={transaction.id}>
-          <td>{transaction.type}</td>
+        <tr className={css.line} key={transaction.id}>
+          <td className={css.type}>{transaction.type}</td>
           <td>{transaction.amount}</td>
           <td>{transaction.currency}</td>
         </tr>
@@ -19,4 +21,5 @@ const Transactions = ({ transactions }) => (
     </tbody>
   </table>
 );
-export default Transactions;
+
+export default TransactionHistory;
