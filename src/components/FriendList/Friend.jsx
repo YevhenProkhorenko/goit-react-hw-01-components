@@ -16,13 +16,8 @@ const Friend = ({ isOnline, avatar, name }) => (
   </li>
 );
 Friend.propTypes = {
-  friends: PropTypes.arrayOf(
-    PropTypes.exact({
-      id: PropTypes.number.isRequired,
-      isOnline: PropTypes.bool.isRequired,
-      avatar: PropTypes.string.isRequired,
-      name: PropTypes.string.isRequired,
-    })
-  ),
+  isOnline: PropTypes.bool.isRequired,
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
 };
 export default Friend;
